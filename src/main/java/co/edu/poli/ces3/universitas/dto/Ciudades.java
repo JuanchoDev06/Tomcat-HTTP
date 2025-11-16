@@ -1,0 +1,31 @@
+package co.edu.poli.ces3.universitas.dto;
+
+public enum Ciudades {
+    BOGOTA,
+    MEDELLIN,
+    CALI,
+    BARRANQUILLA,
+    CARTAGENA,
+    BUCARAMANGA,
+    PEREIRA,
+    MANIZALES,
+    ARMENIA,
+    IBAGUE,
+    SANTA_MARTA,
+    CUCUTA,
+    PASTO,
+    NEIVA,
+    VILLAVICENCIO,
+    MONTERIA,
+    POPAYAN,
+    TUNJA,
+    SINCELEJO,
+    VALLEDUPAR,
+    QUIBDO,
+    RIOHACHA,
+    FLORENCIA,
+    YOPAL,
+    LETICIA,
+    MITU,
+    MOCOA
+}
