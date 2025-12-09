@@ -1,19 +1,24 @@
 package co.edu.poli.ces3.universitas.dto;
 
+
+import java.util.Date;
+
 public class Subject {
 
     private String id;
-
     private String code;
-
     private String name;
-
     private StringBuilder description;
-
     private StatusEnum status;
+    private Date createdAt;
+    private Date updatedAt;
+    private Date deletedAt;
 
 
-    public Subject(String id, StringBuilder description) {
+    public Subject(){
+
+    }
+    public Subject(String id, StringBuilder description){
         this.id = id;
         this.description = description;
         this.status = StatusEnum.ACTIVE;
@@ -59,6 +64,30 @@ public class Subject {
 
     public void setStatus(StatusEnum status) {
         this.status = status;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public Date getDeletedAt() {
+        return deletedAt;
+    }
+
+    public void setDeletedAt(Date deletedAt) {
+        this.deletedAt = deletedAt;
     }
 
 }

@@ -2,8 +2,8 @@ package co.edu.poli.ces3.universitas.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
 
 @WebServlet(name = "studentSrv", value = "/student")
 public class StudentSrv extends HttpServlet {
