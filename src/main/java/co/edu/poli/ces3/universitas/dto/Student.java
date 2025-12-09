@@ -1,27 +1,33 @@
 package co.edu.poli.ces3.universitas.dto;
 
 import java.util.Date;
+import java.util.Vector;
 
 public class Student {
+
+
     private String name;
-
     private String lastName;
-
     private boolean isMarried;
-
     private Date birthDate;
-
     public int age;
-
     protected String ID;
 
-    public Student(){
-        name = "Pedro";
-        lastName = "Meneses";
-        age = 20;
-        isMarried = false;
-        birthDate = new Date(1988,10,10);
-        System.out.println(birthDate.getTime());
+    //Para hacer la relación 1:N
+    private Vector<Subject> subjects = new Vector<>();
+
+    public Student(){}
+
+    public Vector<Subject> getSubjects() {
+        return subjects;
+    }
+
+    public void addSubject(Subject subject) {
+        this.subjects.add(subject);
+    }
+
+    public void setSubjects(Vector<Subject> subjects) {
+        this.subjects = subjects;
     }
 
     public Student(String name, String lastName, boolean isMarried, Date birthDate) {
